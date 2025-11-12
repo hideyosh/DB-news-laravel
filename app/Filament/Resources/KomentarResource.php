@@ -33,7 +33,8 @@ class KomentarResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('nama')
                     ->label('Nama User')
-                    ->searchable(),
+                    ->searchable()
+                    ->sortable(),
                 Tables\Columns\TextColumn::make('isi')
                     ->label('Isi Komentar')
                     ->sortable()
@@ -44,9 +45,10 @@ class KomentarResource extends Resource
                     ->limit('50')
                     ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->label('Tanggal Dibuat')
+                    ->date('d M Y')
+                    ->sortable(),
+                    // ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('updated_at')
                     ->dateTime()
                     ->sortable()

@@ -64,6 +64,7 @@ class BeritaResource extends Resource
                 TextColumn::make('judul')->label('Judul Berita')->searchable()->limit(25)->sortable(),
                 TextColumn::make('ringkasan')->label('Ringkasan')->limit(25)->sortable(),
                 TextColumn::make('isi')->label('Isi Berita')->limit(25)->sortable(),
+                TextColumn::make('created_at')->label('Tanggal dibuat')->date('d M Y')->sortable(),
             ])
             ->filters([
                 //
