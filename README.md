@@ -523,18 +523,17 @@ public function show(berita $berita)
 ## 9. Screenshot Hasil Running
 
 1. Halaman Utama `/`
-    <img width="1470" height="924" alt="Image" src="https://github.com/user-attachments/assets/0f0c9ac2-0886-4336-aee8-518788e332fc" />
-    <img width="1470" height="924" alt="Image" src="https://github.com/user-attachments/assets/2b8a0f03-a417-4c5c-a7fe-f7e02d67c9b1" />
-    <img width="1470" height="924" alt="Image" src="https://github.com/user-attachments/assets/e953dcce-2b0c-4274-ae2c-14e8b943a79a" />
+   <img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/bee06d47-8b6a-40bd-8249-e27a7970d0fd" />
+   <img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/bc07785d-2ce3-4e74-89c3-5401d26538b4" />
+   <img width="1918" height="1199" alt="image" src="https://github.com/user-attachments/assets/5d73eaa9-a413-4dff-8f49-4e659b3c9516" />
 
-2. Halaman Detail Berita `/news/{news}`
-    <img width="1470" height="924" alt="Image" src="https://github.com/user-attachments/assets/a678a7e9-ce61-41ea-a0b1-6977def36592" />
-    <img width="1470" height="924" alt="Image" src="https://github.com/user-attachments/assets/1f358afa-b6fd-43f7-a077-88f7744c78b1" />
-    <img width="1470" height="924" alt="Image" src="https://github.com/user-attachments/assets/80f2e260-6f9c-4e40-82a1-990c51138753" />
-    <img width="1470" height="924" alt="Image" src="https://github.com/user-attachments/assets/9427c078-e264-435a-9a56-44131a40a4a7" />
-    <img width="1470" height="924" alt="Image" src="https://github.com/user-attachments/assets/fa24f56c-eca2-446e-8333-4b176dd92bf0" />
-    <img width="1470" height="924" alt="Image" src="https://github.com/user-attachments/assets/9689a521-0e69-439d-82b6-817a9689105b" />
 
-3. Halaman Tambah Komentar `/news/{news}/komentar`
-    <img width="1470" height="924" alt="Image" src="https://github.com/user-attachments/assets/425bad0e-5a5e-49d1-b77c-12dc9de0f2b6" />
-    <img width="1470" height="924" alt="Image" src="https://github.com/user-attachments/assets/ca2084e5-38a6-4b40-bc3a-24513aca510c" />
+2. Halaman Detail Berita `/berita/{berita}`
+    <img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/b2730a22-2379-42ad-aabd-1bd09919513b" />
+    <img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/3cf25f02-0cce-48c4-bacc-583172a6c448" />
+
+
+3. Halaman Tambah Komentar `/berita/{berita}/komentar`
+    <img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/27f8ab3e-912a-4928-8c06-d80db8da03b8" />
+    <img width="1918" height="1199" alt="image" src="https://github.com/user-attachments/assets/c5a1c162-3d90-454b-95de-73a242a2b62f" />
+
