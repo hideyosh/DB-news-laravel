@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Filament\Resources\Beritas\Pages;
+namespace App\Filament\Resources\BeritaResource\Pages;
 
-use App\Filament\Resources\Beritas\BeritaResource;
-use Filament\Actions\CreateAction;
+use App\Filament\Resources\BeritaResource;
+use Filament\Actions;
 use Filament\Resources\Pages\ListRecords;
 
 class ListBeritas extends ListRecords
@@ -13,7 +13,7 @@ class ListBeritas extends ListRecords
     protected function getHeaderActions(): array
     {
         return [
-            CreateAction::make(),
+            Actions\CreateAction::make(),
         ];
     }
 }

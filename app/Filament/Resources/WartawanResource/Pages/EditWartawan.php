@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Filament\Resources\Wartawans\Pages;
+namespace App\Filament\Resources\WartawanResource\Pages;
 
-use App\Filament\Resources\Wartawans\WartawanResource;
-use Filament\Actions\DeleteAction;
+use App\Filament\Resources\WartawanResource;
+use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 
 class EditWartawan extends EditRecord
@@ -13,7 +13,7 @@ class EditWartawan extends EditRecord
     protected function getHeaderActions(): array
     {
         return [
-            DeleteAction::make(),
+            Actions\DeleteAction::make(),
         ];
     }
 }

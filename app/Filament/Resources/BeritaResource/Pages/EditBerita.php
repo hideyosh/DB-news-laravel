@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Filament\Resources\Beritas\Pages;
+namespace App\Filament\Resources\BeritaResource\Pages;
 
-use App\Filament\Resources\Beritas\BeritaResource;
-use Filament\Actions\DeleteAction;
+use App\Filament\Resources\BeritaResource;
+use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 
 class EditBerita extends EditRecord
@@ -13,7 +13,7 @@ class EditBerita extends EditRecord
     protected function getHeaderActions(): array
     {
         return [
-            DeleteAction::make(),
+            Actions\DeleteAction::make(),
         ];
     }
 }

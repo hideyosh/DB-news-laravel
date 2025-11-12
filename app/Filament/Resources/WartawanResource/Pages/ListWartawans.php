@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Filament\Resources\Wartawans\Pages;
+namespace App\Filament\Resources\WartawanResource\Pages;
 
-use App\Filament\Resources\Wartawans\WartawanResource;
-use Filament\Actions\CreateAction;
+use App\Filament\Resources\WartawanResource;
+use Filament\Actions;
 use Filament\Resources\Pages\ListRecords;
 
 class ListWartawans extends ListRecords
@@ -13,7 +13,7 @@ class ListWartawans extends ListRecords
     protected function getHeaderActions(): array
     {
         return [
-            CreateAction::make(),
+            Actions\CreateAction::make(),
         ];
     }
 }

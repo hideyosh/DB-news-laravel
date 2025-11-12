@@ -1,33 +1,29 @@
 <?php
 
-namespace App\Filament\Resources\Wartawans;
+namespace App\Filament\Resources;
 
-use App\Filament\Resources\Wartawans\Pages\CreateWartawan;
-use App\Filament\Resources\Wartawans\Pages\EditWartawan;
-use App\Filament\Resources\Wartawans\Pages\ListWartawans;
-use App\Filament\Resources\Wartawans\Schemas\WartawanForm;
-use App\Filament\Resources\Wartawans\Tables\WartawansTable;
+use Filament\Forms;
+use Filament\Tables;
 use App\Models\Wartawan;
-use BackedEnum;
-use Filament\Forms\Components\TextInput;
-use Filament\Resources\Resource;
-use Filament\Schemas\Schema;
-use Filament\Support\Icons\Heroicon;
-use Filament\Tables\Table;
 use Filament\Forms\Form;
+use Filament\Tables\Table;
+use Filament\Resources\Resource;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Forms\Components\TextInput;
+use Illuminate\Database\Eloquent\Builder;
+use App\Filament\Resources\WartawanResource\Pages;
+use Illuminate\Database\Eloquent\SoftDeletingScope;
+use App\Filament\Resources\WartawanResource\RelationManagers;
 
 class WartawanResource extends Resource
 {
     protected static ?string $model = Wartawan::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static ?string $navigationIcon = 'heroicon-o-user';
 
-    protected static ?string $recordTitleAttribute = 'App\Models\Wartawan';
-
-    public static function form(Schema $schema): Schema
+    public static function form(Form $form): Form
     {
-          return $schema
+        return $form
             ->schema([
                 TextInput::make('nama')
                     ->required()
@@ -46,10 +42,10 @@ class WartawanResource extends Resource
 
     public static function table(Table $table): Table
     {
-         return $table
+        return $table
             ->columns([
-                TextColumn::make('nama')->label('Nama')->sortable()->searchable(),
-                TextColumn::make('email')->label('Email')->sortable()->searchable(),
+                TextColumn::make('nama')->label('Nama Wartawan')->sortable()->searchable(),
+                TextColumn::make('email')->label('Email Wartawan')->sortable()->searchable(),
             ])
             ->filters([
                 //
@@ -75,9 +71,9 @@ class WartawanResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => ListWartawans::route('/'),
-            'create' => CreateWartawan::route('/create'),
-            'edit' => EditWartawan::route('/{record}/edit'),
+            'index' => Pages\ListWartawans::route('/'),
+            'create' => Pages\CreateWartawan::route('/create'),
+            'edit' => Pages\EditWartawan::route('/{record}/edit'),
         ];
     }
 }

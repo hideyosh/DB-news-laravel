@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Filament\Resources\Beritas\Pages;
+namespace App\Filament\Resources\BeritaResource\Pages;
 
-use App\Filament\Resources\Beritas\BeritaResource;
+use App\Filament\Resources\BeritaResource;
+use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
 
 class CreateBerita extends CreateRecord
